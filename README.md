@@ -1,5 +1,11 @@
 # OIP
 这是一个**即插即用**的模块，自适应不同大小的输入（甚至连**通道**都是自适应的）
+
+```python
+if __name__ == '__main__':
+```
+中的代码展示了对不同size张量的自适应性
+
 ## 用法
 在模型的类定义中，按以下方式处理：
 * from OIPModule.py import OIPModule
