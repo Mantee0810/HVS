@@ -15,9 +15,9 @@ class CBR(nn.Module):
         x = self.relu(x)
         return x
 
-class HVSModule(nn.Module):
+class OIPModule(nn.Module):
     def __init__(self,device='cuda:1'):
-        super(HVSModule, self).__init__()
+        super(OIPModule, self).__init__()
         self.conv_v = None
         self.conv_h = None
         self.bn = None
@@ -50,8 +50,6 @@ class HVSModule(nn.Module):
 
 if __name__ == '__main__':
     input1 = torch.randn(size=(2,3,7,7))
-    h = HVSModule()
-    out = h(input1)
-    # dbndc = DBNDC(3)
-    # out = dbndc(input1)
+    oip = OIPModule()
+    out = oip(input1)
     print(out.shape)
