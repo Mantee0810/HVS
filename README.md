@@ -11,7 +11,7 @@ if __name__ == '__main__':
 * from OIPModule.py import OIPModule
 * 在__init__函数中，加入`self.oip = OIPModule()`
 * 在forward函数中，加入`map = self.oip(map)`
-**就大功告成啦**
+即可完成模块插入
 
 ## 数据集
 数据集与下载链接：
